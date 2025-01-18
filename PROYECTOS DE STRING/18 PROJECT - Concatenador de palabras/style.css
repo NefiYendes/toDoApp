@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+h1{
+    width: 100%;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    gap: 8px;
+}
+textarea{
+    text-align: center;
+    background-color:  #444;
+    padding: 3px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+button{
+    background-color: yellow;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid white;
+    gap: 7px;
+    margin: 3px 10px;
+    transition: all 0.3s ease;
+}
+p{
+    text-align: center;
+    margin-top: 20px;
+    transition: all 03s ease;
+}
+textarea:hover{
+    transform: scale(1.1);
+    border: 1px solid yellow;
+}
+textarea:focus{
+    transform: scale(1.1);
+    outline: 1px solid greenyellow;
+}
+button:hover{
+    outline: 1px solid orange;
+    transform: scale(1.1);
+}
+button:focus{
+    transform: scale(1.1);
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    outline: 1px solid yellow ;
+}
+.mostrar{
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}

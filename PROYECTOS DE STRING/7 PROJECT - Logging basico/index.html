@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Iniciar sesión</h1>
+        <form onsubmit="iniciar(event)">
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+
+            <label for="apellido">Apellido</label>
+            <input type="apellido" id="apellido" required>
+
+            <label for="user">Nombre de usuario</label>
+            <input type="text" id="usuario" required>
+
+            <label for="mail">Correo electronico</label>
+            <input type="email" id="email" required>
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="password" required>
+
+            <label for="tyc"><input type="checkbox" id="tyc" required>Acepto los terminos politicas y condiciones</label>
+
+            <button type="submit">Enviar formulario</button>
+        </form>
+        <button onclick="activar()">Modo Oscuro</button>
+        <p id="parrafo"></p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

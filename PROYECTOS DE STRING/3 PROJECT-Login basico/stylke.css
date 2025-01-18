@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: coral;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+label{
+    margin-top: 7px;
+}
+input{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(221,220,218);
+}
+button{
+    padding: 7px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue
+    color: white;
+    align-self: center;
+    margin-top: 15px;
+}
+p{
+    font: 15px;
+}

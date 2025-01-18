@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Basico con alert</title>
+    <link rel="stylesheet" href="stylke.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Iniciar sesion</h1>
+        <form onsubmit="iniciar(event)">
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" required>
+            
+            <label for="tag">Nombre de usuario:</label>
+            <input type="text" id="tag" required>
+
+            <label for="nombre">Correo electronico</label>
+            <input type="email" id="correo" required>
+
+            <label for="contra">Contraseña</label>
+            <input type="password" id="contra" required>
+
+            <label for="tyc"><input type="checkbox" id="tyc" required>Acepto los terminos politicas y condiciones</label>
+
+            <button type="submit">Iniciar sesion</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

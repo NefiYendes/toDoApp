@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+label{
+    font-size: 20px;
+    margin-top: 8px;
+}
+input{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 50px;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+form p{
+    font-size: 20px;
+    margin: 10px 1px;
+}
+.resultados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.parrafo{
+    font-size: 0px;
+    transition: all 0.5s ease;
+}
+.mostrar{
+    font-size: 20px;
+}
+.imagen{
+    background-color: blue;
+    background-image: url(Captura\ desde\ 2024-11-25\ 16-19-51.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+}
+.equilatero{
+    background-position: -6px -1px;
+    width: 180px;
+    height: 155px;
+}
+.isóceles{
+    background-position: -217px -1px;
+    width: 180px;
+    height: 155px;
+}
+.escaleno{
+    background-position: -405px -1px;
+    width: 200px;
+    height: 155px;
+}

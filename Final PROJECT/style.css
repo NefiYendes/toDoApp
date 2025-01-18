@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    margin: 0;
+}
+.effect{
+    background: #0000800e;
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+}
+nav{
+    position:relative;
+}
+.section1{
+    margin-top: 0;
+    width: 100%;
+    padding: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    top: 40px;
+    position: fixed;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+
+}
+.segundo{
+    background: #0000800e;
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+
+}
+h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-align: center;
+    position: absolute;
+    left: 740px;
+    font-size: 16px;
+
+}
+
+nav ul{
+    margin-top: 0;
+    position: relative;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size: 15px;
+}
+img{
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 100%;
+    height: 117vh;
+}
+.ayuda{
+    display: flex;
+    flex-direction: column;
+    height: 10px;
+    width:4%;
+    position: fixed;
+    bottom: 8%;
+    right: 2%;
+    background:none;
+    border: none;
+    z-index: 5;
+}
+.boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    z-index: 1;
+    position: fixed;
+    bottom: 2.7%;
+    right: 1.5%;
+    padding: 25px;
+    border-radius: 100%;
+    color: rgba(128, 128, 128, 0);
+    background: #fbfbfc51;
+}
+body{
+    background-color: rgb(240, 240, 239);
+    overflow-x: hidden;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+.nuevo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+h2{
+    font-size: 20px;
+}
+.verTodo{
+    padding: 2px;
+    font-size: 11px;
+    width: 110px;
+    height: 22px;
+    z-index: -1;
+    
+}
+.newIn{
+    display: flex;
+    gap: 5px;
+    font-size:11px;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 10px;
+    background-color: rgb(240, 240, 239);
+}
+figure{
+    display: flex;
+    height: 120vh;
+    width: 100%;
+}
+article{
+    margin-bottom: 0;
+}
+.buzo{
+    height: 45%;
+}
+.franela{
+    height: 45%;
+}
+.pantalon{
+    height: 45%;
+}
+.camisa{
+    height: 45%;
+}
+.dos{
+    position: relative;
+    left: -150px;
+}
+.tres{
+    position: relative;
+    left: -250px;
+}
+.cuatro{
+    position: relative;
+    left: -380px;
+}
+.nombres{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 540px;
+    padding: 20px;
+}
+.second{
+    position: relative;
+    right: 50px;
+}
+.third{
+    position: relative;
+    right: 220px;
+}
+.fourth{
+    position: relative;
+    right: 270px;
+}
+footer{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(47, 35, 3);
+}
+table td{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    position: relative;
+    height: 500px;
+    top: -500px;
+}
+h5{
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.logos{
+    display: flex;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    left: 665px;
+    gap: 15px;
+}
+#wp{
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+#fb{
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+#ig{
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+#x{
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+#spoti{
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+#tk{
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+.final{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    bottom:870px ;
+    padding: 5px;
+    color: white;
+}
+.terminar{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 11px;
+    font-weight: lighter;
+    bottom: 750px;
+    border-top: 1px solid;
+    padding-top:70px;
+    justify-content: center;
+}
+

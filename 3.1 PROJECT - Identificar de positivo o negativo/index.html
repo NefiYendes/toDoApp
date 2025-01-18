@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Clasificador de Numeros</h1>
+    <form onclick="verificar(event)">
+        <label for="num">Ingresa tu numero:</label>
+        <textarea id="num" required placeholder="ej:5"></textarea>
+        <div class="container">
+            <button type="button" onclick="clasificar()">Verificar</button>
+        </div>
+        <p id="parrafo"></p>
+    </form>
+    
+</body>
+<script src="script.js"></script>
+</html>

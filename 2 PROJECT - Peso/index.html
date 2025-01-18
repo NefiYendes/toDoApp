@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Verifica tu condicion</h1>
+    <form onclick="calcular(event)">
+        <div class="peso">
+            <label for="peso">Escribe tu peso en Kg</label>
+            <textarea id="peso" required placeholder="ej:25"></textarea>
+        </div>
+        <div class="altura">
+            <label for="altura">Escribe tu altura en Mts</label>
+            <textarea id="altura" required placeholder="ej:1.70"></textarea>
+        </div>
+    </form>
+    <div class="container">
+        <button type="button" onclick="evaluar()">Evaluar</button>
+    </div>
+    <p id="parrafo"></p>
+</body>
+<script src="script.js"></script>
+</html>

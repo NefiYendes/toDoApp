@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+label{
+    color: yellow;
+}
+textarea{
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: #444;
+    color: yellow;
+    font-size: 16px;
+}
+button{
+    padding: 4px;
+    font-size: 18px;
+    background-color: yellow;
+    border-radius: 8px;
+}
+.try{
+    display: none;
+}
+.intentar{
+    top: 50%;
+    position: absolute;
+    height: 80px;
+    padding:8px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    gap: 7px;
+    background-color: yellow;
+    color: black;
+    border: 1x solid black;
+    justify-content: center;
+}
+#tentar{
+    background-color: orange;
+    border: 1px solid black;
+    color:  black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mostrar{
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+.nuevo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 80px;
+    font-size: 16px;
+    gap: 5px;
+    background-color: yellow;
+    color: black;
+    border: 1x solid black;
+}
+#intenta{
+    font-size: 20px;
+}
+
+

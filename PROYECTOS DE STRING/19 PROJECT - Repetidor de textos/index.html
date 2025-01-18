@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Repetidor de textos</h1>
+    <form onclick="evento(event)">
+        <label for="texto">Ingresa un  texto:
+        </label>
+        <textarea id="texto" required placeholder="Texto de ejemplo"></textarea>
+        <div class="container">
+            <button type="button" onclick="repetir()">Repetir</button>
+        </div>
+        <p id="parrafo"></p>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>

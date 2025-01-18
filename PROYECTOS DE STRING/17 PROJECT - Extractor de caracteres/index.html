@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Extractor de caracteres</h1>
+    <form onsubmit="evento(event)">
+        <label for="texto">Ingrese un texto:</label>
+        <textarea id="texto" required onkeydown="ocultar()" placeholder="Este es un texto de ejemplo"></textarea>
+        <label for="texto2">Ingresa la posicion a extraer</label>
+        <textarea id="texto2" placeholder="ingrese un numero"></textarea>
+        <div class="container">
+            <button type="submit" onclick="f1()">Extraer F1</button>
+            <Button type="submit" onclick="f2()">Extraer F2</Button>
+            <button type="submit" onclick="f3()">Extraer F3</button>
+            <button type="submit" onclick="f4()">Extraer F4</button>
+            <button type="reset" onclick="borrar()" class="borrar">Borrar</button> 
+        </div>
+        <p class="parrafo" id="parrafo">
+            <span id="r1"></span>
+            <span id="r2"></span>
+        </p>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>

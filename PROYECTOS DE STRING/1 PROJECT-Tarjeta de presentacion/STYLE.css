@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+    background-color: antiquewhite;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px purple;
+}
+buttom{
+    background-color: blue;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: none;
+}

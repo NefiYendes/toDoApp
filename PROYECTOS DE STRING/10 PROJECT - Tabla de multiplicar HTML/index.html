@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de tablas de multiplicar</h1>
+        <form onsubmit="calcular(event)">
+            <label for="num">Ingresa un número: <input type="number" id="num" required min="0" step="0.01"> <button type="submit">Generar tabla</button></label>
+        </form>
+        <div class="tabla" id="tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>Operacion</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="o1"></td>
+                    <td id="r1"></td>
+                </tr>
+                <tr>
+                    <td id="o2"></td>
+                    <td id="r2"></td>
+                </tr>
+                <tr>
+                    <td id="o3"></td>
+                    <td id="r3"></td>
+                </tr>
+                <tr>
+                    <td id="o4"></td>
+                    <td id="r4"></td>
+                </tr>
+                <tr>
+                    <td id="o5"></td>
+                    <td id="r5"></td>
+                </tr>
+                <tr>
+                    <td id="o6"></td>
+                    <td id="r6"></td>
+                </tr>
+                <tr>
+                    <td id="o7"></td>
+                    <td id="r7"></td>
+                </tr>
+                <tr>
+                    <td id="o8"></td>
+                    <td id="r8"></td>
+                </tr>
+                <tr>
+                    <td id="o9"></td>
+                    <td id="r9"></td>
+                </tr>
+                <tr>
+                    <td id="o10"></td>
+                    <td id="r10"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>   
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Buscador de palabras</h1>
+    <form onsubmit="evento(event)">
+        <label for="palabra">Ingresa un texto: </label>
+        <textarea id="palabra" required onkeydown="ocultar()" placeholder="Ingresa un texto"></textarea>
+        <label for="palabra2"></label>
+        <textarea id="palabra2" required onkeydown="ocultar()" placeholder="Palabra a buscar"></textarea>
+        <div id="container">
+            <button type="submit" onclick="first()">Primera</button>
+            <button type="submit" onclick="last()">Última</button>
+        </div>
+    </form>
+    <p id="parrafo">
+        <span id="r1"></span>
+        <span id="r2"></span>
+    </p>
+</body>
+<script src="script.js"></script>
+</html>

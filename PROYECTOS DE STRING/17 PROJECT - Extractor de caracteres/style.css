@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+h1{
+    width: 100%;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: yellow;
+}
+textarea{
+    border-radius: 7px;
+    padding: 5px;
+    border: 1px solid white;
+    background-color: #444;
+    color: white;
+    text-align: center;
+
+}
+textarea:focus{
+    border: none;
+    transform: scale(1.1);
+    outline: 2px solid rgb(169, 255, 49);
+}
+button{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: yellow;
+    margin: 15px 5px ;
+}
+p{
+margin-top: 5px;
+font-size: 0px;
+color: white;
+}
+button:hover{
+    border: none;
+    transform: scale(1.1);
+    outline: 3px solid rgb(187, 255, 92);
+}
+button:focus{
+    outline: 2px solid yellow;
+    background-color: rgb(255, 179, 3);
+}
+.borrar{
+    background-color: red;
+    color: white;
+}
+.borrar:hover{
+    outline: 3px solid orange;
+}
+.borrar:focus{
+    background-color: darkred;
+    outline: 2px solid red;
+}
+.mostrar{
+    font-size: 22px;
+    color: white;
+    transition: all 0.3 ease;
+}

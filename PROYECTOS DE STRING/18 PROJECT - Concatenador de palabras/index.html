@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Concatenador de Texto</title>
+</head>
+<body>
+    <h1>Concatenador de palabras</h1>
+    <form onclick="unir(event)">
+        <div class="contenedor">
+            <label for="texto1"> Palabra 1
+            </label>
+            <textarea id="texto1" required placeholder="Palabra Nro 1"></textarea>
+        </div>
+        <div class="contenedor">
+            <label for="texto2"> Palabra 2
+            </label>
+            <textarea id="texto2" required placeholder="Palabra Nro 2"></textarea>
+        </div>
+        <div class="container">
+            <button type="button" onclick="concatenar()">Concatenar 1</button>
+            <button type="button" onclick="combinar()">Concatenar 2</button>
+        </div>
+        <p id="parrafo"></p>
+    </form>
+    
+</body>
+<script src="script.js"></script>
+</html>

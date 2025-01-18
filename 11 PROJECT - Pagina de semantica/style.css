@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+}
+section{
+    background-color: white;
+    padding:9px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 7px;
+    height: 1000px;
+}
+article{
+    background-color: rgb(133, 236, 250);
+    display: flex;
+    padding: 5px;
+    border-radius: 7px;
+    justify-content: space-between;
+    padding: 20px;
+}
+div{
+    align-items: center;
+    justify-content: space-between;
+    background-color: yellow;
+    border-radius: 7px;
+    padding: 20px;
+
+}
+.static{
+    background-color: red;
+    color: white;
+    position: static;
+}
+.relative{
+    background-color: blue;
+    color: white;
+    position: relative;
+}
+.absolute{
+    background-color: violet;
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.fixed{
+    background-color: greenyellow;
+    color: white;
+}
+.sticky{
+    background-color: black;
+    color: white;
+}
+.last{
+    padding: 10px;
+}

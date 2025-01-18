@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 20 px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+h1{
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+label{
+    margin-top: 5px;
+    font-size: 20px;
+    color: #fff800;
+}
+
+textarea{
+    width: 100px;
+    height: 35px;
+    min-height: 50px;
+    min-width: 200px;
+    max-width: 450px;
+    max-height: 400px;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #222;
+    color: white;
+    border: 1px solid white;
+    align-items: center;
+    font-size: 16px;
+}
+
+textarea:focus{
+    border: none;
+    outline: 3px solid greenyellow;
+}
+.container{
+    padding: 8px;
+    gap: 5px;
+}
+
+button{
+    margin: 5px;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff800;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    color: rgb(232, 141, 23);
+}
+
+button:focus{
+    transform: scale(1.2);
+    color: rgb(232,141,23);
+}
+
+p{
+    font-size: 0px;
+    transition: all 0.3s ease;
+}
+
+.mostrar{
+    font-size: 20px;
+    color: white;
+}
+
