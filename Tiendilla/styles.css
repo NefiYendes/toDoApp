@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(113deg , beige, rgb(218, 216, 216));
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+.sueter, .pantalon, .gorra {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    padding: 10px;
+    gap: 20px;
+}
+ul >li{
+    list-style: none;
+
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.sueter:hover, .pantalon:hover, .gorra:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    background-color: rgb(128, 69, 2);
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+    margin-top:20px;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    .titulo, .options {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .main {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 20px;
+        gap: 20px;
+    }
+
+    .sueter, .pantalon, .gorra {
+        flex-direction: column;
+        width: 30%;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img{
+        width: 500px;
+        height: 500px;
+        gap: 10px;
+    }
+    .titulo{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
