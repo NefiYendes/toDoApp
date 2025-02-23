@@ -2,8 +2,18 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background: linear-gradient(113deg , beige, rgb(218, 216, 216));
+body {
+    background: linear-gradient(113deg ,beige , rgb(119, 73, 0));
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+    gap: 20px;
 }
 .titulo{
     display: flex;
@@ -11,12 +21,29 @@ body{
     align-items: center;
     background-color: beige;
 }
-.sueter, .pantalon, .gorra {
+select{
+    padding: 10px;
+    border-radius: 15px;
+    border:none;
+    outline: none;
+    margin: 15px 10px;
+}
+.filtro{
+    margin-top: 30px;
     display: flex;
-    flex-direction: column;
+    margin-left: 15px;
+}
+.comprar{
+    background-color: rgb(117, 1, 1);
+    color: white;
+    cursor: pointer;
+}
+.sueter, .pantalon, .gorra, .product {
+    flex: 1 1 calc(25% - 40px); 
+    box-sizing: border-box;
+    max-width: calc(25% - 40px); 
     background-color: beige;
     padding: 10px;
-    gap: 20px;
 }
 ul >li{
     list-style: none;
@@ -33,6 +60,24 @@ img {
     background-color: rgb(128, 69, 2);
     color: white;
 }
+.botones{
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+#add{
+    color:rgb(128, 69, 2);
+    background-color: rgb(255, 238, 190);
+}
+#remove{
+    color:rgb(128, 69, 2);
+    background-color: rgb(255, 238, 190);
+}
+.titulo, .main, .botones, footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 footer{
     display: flex;
@@ -44,9 +89,35 @@ footer{
 }
 input{
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid black;
+    border-radius: 15px;
+    border:none;
+    outline: none;
     align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+button{
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(236, 205, 121);
+}
+.descript{
+    color: white;
+}
+.product-number {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: white;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 12px;
 }
 
 /* Estilos para pantallas grandes */
@@ -62,14 +133,15 @@ input{
     .main {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
-        padding: 50px 20px;
+        padding: 50px 0; /* Espacio arriba y abajo */
         gap: 20px;
     }
 
     .sueter, .pantalon, .gorra {
         flex-direction: column;
-        width: 30%;
+        width: calc(25% - 20px); /* Tamaño ajustado */
     }
 
     img {
@@ -86,14 +158,13 @@ input{
         align-items: center;
     }
 
-    img{
-        width: 500px;
-        height: 500px;
-        gap: 10px;
+    img {
+        width: 50%;
+        height: auto;
     }
-    .titulo{
+
+    .titulo {
         display: flex;
         justify-content: space-around;
     }
-
 }

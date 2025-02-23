@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, blue, white);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 50px;
+    border-radius: 15px;
+    gap: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(1000px);
+    border: 2px solid white;
+}
+h1{
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+textarea{
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+textarea:focus{
+    outline: 2px solid blue;
+}
+.botones{
+    display: flex;
+    gap: 20px;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+}
+button:hover{
+    transform: scale(1.1);
+}
+button:active{
+    transform: scale(0.9);
+}
+#add{
+    background-color: rgb(153, 255, 0);
+}
+#remove{
+    background-color: red;
+    color: white;
+}
+#addRan{
+    background-color: orange
+}
+#removeRan{
+    background-color: orangered;
+}
+#agg{
+    background-color: rgb(65, 65, 218);
+}
+#primero{
+background-color: yellow;
+}
+table{
+    border-radius: 22px;
+    border-collapse: separate;
+    background-color:rgb(63, 153, 226);
+    border: 2px solid white;
+    overflow: hidden;
+}
+th, td{
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+}
+td{
+    color: black;
+}
+thead tr th:first-child{
+    border-top-left-radius: 20px;
+}
+thead tr th:last-child{
+    border-top-right-radius: 20px;
+}
+tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 20px;
+}
+tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 20px;
+}
+#tabla{
+    display: none;
+}
+.p2, .p3{
+    display: none;
+}
+p{
+    font-size: 0px;
+    transition: all 0.3s ease;
+}
+#p1{
+    font-size: 20px;
+}
+.ocupa{
+    font-size: 20px;
+}

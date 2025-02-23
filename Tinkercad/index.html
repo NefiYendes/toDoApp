@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinkercad</title>
+    <link rel="icon" href="/Tinkercad/logo-tinkercad-256.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img class="imagen-titulo" src="/Tinkercad/tinkercad-lockup-white.svg" alt="">
+            <ul class="menu-principal">
+                <li><a href="#">Tinker</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Aulas</a></li>
+                <li><a href="#">Recursos</a></li>
+            </ul>
+            <ul class="menu-secundario">
+                <li><img class="buscar" src="/Tinkercad/icons8-búsqueda-50 (1).png" alt="Buscar"></li>
+                <li><button class="iniciar-sesion">Iniciar sesión</button></li>
+                <li><button class="registrarse" onclick="submit()">Registrarse</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <figure>
+            <video id="hero-video" src="/Tinkercad/hero-homepage-2000.mp4" alt="Video-principal" autoplay muted loop>
+                Your browser does not support the video tag.
+            </video>
+            <h1 class="portada">Todo lo que necesitas es un ‘qué tal si...’</h1>
+            <button class="play-pause-button" id="play-pause-button">
+                <img src="/Tinkercad/PauseIcon.png" alt="Pause"></button> 
+        </figure>
+        <span class="poster-container">
+            <img class="poster" src="/Tinkercad/feature-video-poster.webp" alt="Poster">
+            <button class="play">
+                <img class="boton-play" src="/Tinkercad/icons8-reproducir-en-círculo-24.png" alt="play">
+                Reproducir<br>video
+            </button>
+        </span>
+        <article class="description">
+            <p>Tinkercad es una aplicación web gratuita para realizar diseños 3D,<br>componentes electrónicos y codificación en la que confían más de 75 millones<br>de personas en todo el mundo.</p>
+            <p>Aumenta el dominio de las disciplinas STEM al llevar el aprendizaje basado en<br>proyectos al aula.</p>
+        <span class="botones">
+            <button class="boton tinkercad">Empezar a usar Tinkercad</button>
+            <button class="boton unirse">Únete a una clase</button>
+        </span>
+    </article>
+        <section>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+    background-color: yellow;
+    margin-bottom: 10px;
+    color: black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;    
+}
+label{
+    font-size: 18px;
+    color: yellow;
+}
+textarea{
+    background-color: #444;
+    color: yellow;
+    border-radius: 9px;
+    padding: 3px;
+    text-align: center;
+    font-size: 18px;
+}
+button{
+    background-color: yellow;
+    padding: 5px;
+    font-family: 16px;
+    border-radius: 10px;
+    color: black;
+}
+.mostrar{
+    color: white;
+    font-size: 20px;
+    margin-top: 8px;
+}

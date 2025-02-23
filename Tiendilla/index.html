@@ -7,58 +7,92 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <nav class="titulo">
-        <h1>Super Max</h1>
-        <ul class="options">
-            <li>Home</li>
-            <li>About</li>
-            <li>Locations</li>
-            <li>Contact Me</li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="titulo">
+            <h1>Super Max</h1>
+            <ul class="options">
+                <li>Home</li>
+                <li>About</li>
+                <li>Locations</li>
+                <li>Contact Me</li>
+            </ul>
+        </nav>
+    </header>
     <form>
-    <section class="main">
-        <div class="sueter">
-            <figure>
-                <img src="sueter.webp" alt="Imagen de sueter">
-                <figcaption>Sueter moderno ajustable</figcaption>
-            </figure>
-            <p id="precioSueter">Precio: $500</p>
-            <p>talla: Única</p>
-        </div>
-        <div class="pantalon">
-            <figure>
-                <img src="Pantalon-9120-600x600.jpg" alt="Imagen de Jean moderno">
-                <figcaption>Jean moderno para damas</figcaption>
-            </figure>
-            <p id="precioPant">Precio: $120</p>
-            <p>talla: 32</p>
-        </div>
-        <div class="sueter">
-            <figure>
-                <img src="Cuello V.jpg" alt="Imagen de sueter mas cool">
-                <figcaption>Sueter cuello V<br>Elegante</figcaption>
-            </figure>
-            <p id="precioSueter1">Precio: $600</p>
-            <p>talla: Única</p>
-        </div>
-        <div class="gorra">
-            <figure>
-                <img src="gorra.jpeg" alt="Gorra popular Chavista">
-                <figcaption>Gorra ajustable super patriota</figcaption>
-            </figure>
-            <p id="gorra">Precio: $80</p>
-            <p>talla: Ajustable</p>
-        </div>
-        
-    </section>
-    <footer>
-        <input type="number" placeholder="Ingresa tu edad">
-        <button onclick="agregar()">Enviar</button>
-    </footer>
-    
+        <section>
+            <p class="filtro">Selecciona el filtro</p>
+            <select name="filtro" id="filtro">
+                <option value="precio">Precio</option>
+                <option value="categoria">Categoria</option>
+            </select>
+            <div id="filtro-precio">
+                <input type="checkbox" name="precio" value="menor" id="menor-500">
+                <label for="menor-500">Menor de 500</label>
+                <input type="checkbox" name="precio" value="mayor" id="mayor-500">
+                <label for="mayor-500">Mayor de 500</label>
+            </div>
+            <div id="filtro-categoria">
+                <input type="checkbox" name="categoria" value="ropa" id="categoria-ropa">
+                <label for="categoria-ropa">Ropa</label>
+                <input type="checkbox" name="categoria" value="tecnologia" id="categoria-tecnologia">
+                <label for="categoria-tecnologia">Tecnología</label>
+            </div>
+            <input type="text" placeholder="Busca tu producto">
+            <button id="filtrar">Filtrar</button>
+        </section>
+        <section class="main" id="main-section">
+            <div class="sueter" data-categoria="ropa">
+                <div class="product-number">1</div>
+                <figure>
+                    <img src="sueter.webp" alt="Imagen de sueter">
+                    <figcaption>Sueter moderno ajustable</figcaption>
+                </figure>
+                <p id="precioSueter">500</p>
+                <p>talla: Única</p>
+                <button class="comprar">Comprar</button>
+            </div>
+            <div class="pantalon" data-categoria="ropa">
+                <div class="product-number">2</div>
+                <figure>
+                    <img src="Pantalon-9120-600x600.jpg" alt="Imagen de Jean moderno">
+                    <figcaption>Jean moderno para damas</figcaption>
+                </figure>
+                <p id="precioPant">120</p>
+                <p>talla: 32</p>
+                <button class="comprar">Comprar</button>
+            </div>
+            <div class="sueter" data-categoria="ropa">
+                <div class="product-number">3</div>
+                <figure>
+                    <img src="Cuello V.jpg" alt="Imagen de sueter mas cool">
+                    <figcaption>Sueter cuello V<br>Elegante</figcaption>
+                </figure>
+                <p id="precioSueter1">600</p>
+                <p>talla: Única</p>
+                <button class="comprar">Comprar</button>
+            </div>
+            <div class="gorra" data-categoria="ropa">
+                <div class="product-number">4</div>
+                <figure>
+                    <img src="gorra.jpeg" alt="Gorra popular Chavista">
+                    <figcaption>Gorra ajustable super patriota</figcaption>
+                </figure>
+                <p id="gorra">80</p>
+                <p>talla: Ajustable</p>
+                <button class="comprar">Comprar</button>
+            </div>
+        </section>
+        <section class="botones">
+            <button id="add">Agregar Producto</button>
+            <button id="remove">Eliminar producto</button>
+        </section>
+        <footer>
+            <p class="descript">Ingresa tu edad y conoce el descuento que hay para ti.</p>
+            <input id="edad" type="number" placeholder="Ingresa tu edad">
+            <button id="enviar">Enviar</button>
+        </footer>
     </form>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
+
