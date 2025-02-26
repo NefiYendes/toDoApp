@@ -7,41 +7,40 @@ const ttl = document.querySelector('.title');
 const art_name = document.querySelector('#name');
 const progress = document.querySelector('.line');
 const lineChild = document.querySelector('.lineChild');
+const volumeButton = document.getElementById('volume-btn');
+const volumeIcon = document.getElementById('vlm');
+const volumeSlider = document.getElementById('volume');
+const mIcon = document.getElementById('muted');
 
 const artist_name = ['Drake','Adele', 'Ariana Grande', 'BTS', 'Camila Cabello', 'Ed Sheeran', 'Harry Styles', 'Justin Bieber', 'Katy Perry','Post Malone', 'Shawn Mendes', 'The Weeknd'];
 const artist_title = ["God's plan",'Someone Like You', 'Thank U, Next','Butter', 'Havana','Shape of You', 'Watermelon Sugar', 'Yummy', 'Roar', 'Congratulations', 'Lost in Japan', 'Blinding Lights'];
 
 let intervalId;
 let isDragging = false;
+let x = 0;
 
 playSong.addEventListener('click', effect);
 
 function effect(){
-    if(ad.duration == ad.currentTime){
-        x += 1;
-        console.log(x);
-    }
-    if(playing.classList.contains('none')){
-        ad.pause();
-        playing.style.display = 'flex';
-        pause.style.display = 'none';
-        clearInterval(intervalId);
-    } else {
+    if(ad.paused){
         ad.play();
         playing.style.display = 'none';
         pause.style.display = 'flex';
         intervalId = setInterval(prog, 1000);
+    } else {
+        ad.pause();
+        playing.style.display = 'flex';
+        pause.style.display = 'none';
+        clearInterval(intervalId);
     }
     ttl.classList.toggle('run');
     art_img.classList.toggle('round');
-    playing.classList.toggle('none');
-    pause.classList.toggle('none');
     dur();
 }
 
 function removeEffect(){
     ad.pause();
-    ad.currentTime = 0.01;
+    ad.currentTime = 0;
     ttl.classList.remove('run');
     playing.classList.remove('none');
     pause.classList.add('none');
@@ -49,24 +48,16 @@ function removeEffect(){
     clearInterval(intervalId);
 }
 
-var x = 0;
-
 function backward(){
     dur();
-    x -= 1;
-    if(x < 0){
-        x = artist_name.length - 1;
-    }
+    x = (x - 1 + artist_name.length) % artist_name.length;
     removeEffect();
     songs(x);
 }
 
 function forward(){
     dur();
-    x += 1;
-    if(x >= artist_name.length){
-        x = 0;
-    }
+    x = (x + 1) % artist_name.length;
     removeEffect();
     songs(x);
 }
@@ -84,23 +75,16 @@ const strt = document.querySelector('#start');
 const end = document.querySelector('#end');
 
 function dur(){
-    var dura = ad.duration;
-    var secdu = Math.floor(dura % 60);
-    var mindu = Math.floor(dura / 60);
-    if(secdu < 10){
-        secdu = `0${secdu}`;
-    }
+    const dura = ad.duration;
+    const secdu = Math.floor(dura % 60).toString().padStart(2, '0');
+    const mindu = Math.floor(dura / 60);
     end.innerHTML = `${mindu}:${secdu}`;
 }
 
 function prog(){
-    var curtine = ad.currentTime;
-    var mincur = Math.floor(curtine / 60);
-    var seccur = Math.floor(curtine % 60);
-
-    if(seccur < 10){
-        seccur = `0${seccur}`;
-    }
+    const curtine = ad.currentTime;
+    const mincur = Math.floor(curtine / 60);
+    const seccur = Math.floor(curtine % 60).toString().padStart(2, '0');
 
     strt.innerHTML = `${mincur}:${seccur}`;
 
@@ -133,3 +117,27 @@ function updateProgress(e) {
     ad.currentTime = newTime;
     lineChild.style.width = `${(newTime / ad.duration) * 100}%`;
 }
+
+volumeButton.addEventListener('click', () => {
+    if (ad.volume > 0) {
+        ad.volume = 0;
+        volumeIcon.style.display = "none"
+        mIcon.style.display = "flex"
+    } else {
+        ad.volume = volumeSlider.value;
+        volumeIcon.style.display = "flex";
+        mIcon.style.display = "none";
+    }
+});
+
+volumeSlider.addEventListener('input', () => {
+    ad.volume = volumeSlider.value;
+    if (ad.volume == 0) {
+        mIcon.style.display = "flex"
+        volumeIcon.style.display = "none";
+    }else {
+        volumeIcon.style.display = "flex"
+        mIcon.style.display = "none"
+    }
+
+});

@@ -48,6 +48,15 @@
             </div>
             <audio class="song" src=""></audio>
         </div>
+        <div class="player-controls">
+            <div class="volume-control">
+                <button id="volume-btn" class="volume-btn" onclick="toggleVolume()">
+                    <img id="muted" class="no-sonido volume-icon" src="./icons8-cancelar-2-30.png" alt="Muted">
+                    <img id="vlm" src="./icons8-audio-30.png" alt="" class="volume-icon">
+                </button>
+                <input type="range" class="volume-slider" id="volume" min="0" max="1" step="0.01" value="1" oninput="setVolume()">
+            </div>
+        </div>
     </div>
 </div> 
 </body>
