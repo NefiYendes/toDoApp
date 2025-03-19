@@ -25,6 +25,10 @@
     padding: 0 20px;
     font-size: 17px;
 }
+.movible{
+    position: fixed;
+    z-index: 2;
+}
 
 .imagen-titulo {
     max-width: 185px;
@@ -92,13 +96,15 @@ li {
     font-size: 14px;
 }
 video{
-    height: 500px;
+    height: 532px;
     width: 100%;
     object-fit: cover;
+    position: relative;
+    top: 50px;
 }
 .play-pause-button {
     position: absolute;
-    bottom: 210px;
+    bottom: 204px;
     right: 10px;
     background-color: white;
     color: rgb(255, 255, 255); 
@@ -120,7 +126,7 @@ video{
     position: relative;
     display: inline-block;
     left: 490px;
-    top: -140px;
+    top: -100px;
 
 }
 
@@ -137,7 +143,7 @@ video{
     color: white;
     border-radius: 30px;
     border: none;
-    padding: 8px 20px;
+    padding: 10px 20px;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -171,7 +177,7 @@ video{
     text-align: center;
     align-items: center;
     position: relative;
-    top: -120px;
+    top: -90px;
     font-family: sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -195,4 +201,169 @@ video{
     cursor: pointer;
     font-size: 16px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.figuras{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    top: -70px;
+}
+.figuras h3{
+    margin: 5px auto 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #2d2d2d;
+}
+.figuras p{
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.primera-imagen{
+    position: relative;
+    left: 18px;
+}
+section a{
+    color: rgb(0, 110, 255);
+    top: 20px;
+    position: relative;
+    justify-content: space-around;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.medio{
+    display: flex;
+}
+.centrar{
+    position: relative;
+    top: 45px;
+}
+h4{
+    font-size: 33px;
+    font-weight: lighter;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top:85px;
+    color: white;
+}
+.adorno{
+    position: relative;
+    z-index: -1;
+    top: -85px;
+}
+h5{
+    color: rgb(3, 50, 237);
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    top:-20px;
+    font-family:artifakt-legend, sans-serif;
+}
+.otro-parrafo p{
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: rgba(83, 82, 82, 0.829);
+}
+.articulos{
+    position: relative;
+    top: 190px;
+    justify-content: space-between;
+}
+.desing-1{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+.desing-1 .play-pause-button{
+    right: 280px;
+    top: 280px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    left: 35px;
+}  
+.container p:nth-child(1){
+font-size: 17px;
+}
+.azul{
+    color: rgb(0, 132, 255);
+    font-size: 24px;
+}
+.container p:nth-child(3){
+    font-size: 16px;
+    color: #5A6E73;
+    line-height: 1.6;
+}
+.accesorio{
+    margin-bottom: 230px;
+}
+.container button{
+    background-color: rgb(0, 132, 255);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 7px 0;;
+    text-align: center;
+    width: 44%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.container-1 video{
+    height: 150px;
+    width: auto;
+}
+.otro{
+    position: relative;
+    top: 164px;
+    right: 60px;
+    width: 25px;
+    height: auto;
+}
+.verde{
+    color: green;
+    font-size: 24px;
+}
+.container .button-green{
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 0;;
+    text-align: center;
+    width: 44%;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(13, 125, 13);
+}
+.middle-video{
+    position: relative;
+    width: 500px;
+    height: 1000px;
+}
+.purple{
+    color: purple;
+    font-size: 24px;
+}
+.container .button-purple{
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 0;;
+    text-align: center;
+    width: 44%;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: purple;
 }

@@ -13,6 +13,7 @@ const volumeSlider = document.getElementById('volume');
 const mIcon = document.getElementById('muted');
 
 const artist_name = ['Drake','Adele', 'Ariana Grande', 'BTS', 'Camila Cabello', 'Ed Sheeran', 'Harry Styles', 'Justin Bieber', 'Katy Perry','Post Malone', 'Shawn Mendes', 'The Weeknd'];
+
 const artist_title = ["God's plan",'Someone Like You', 'Thank U, Next','Butter', 'Havana','Shape of You', 'Watermelon Sugar', 'Yummy', 'Roar', 'Congratulations', 'Lost in Japan', 'Blinding Lights'];
 
 let intervalId;
@@ -139,5 +140,4 @@ volumeSlider.addEventListener('input', () => {
         volumeIcon.style.display = "flex"
         mIcon.style.display = "none"
     }
-
 });

@@ -221,7 +221,7 @@ i{
     transform: scale(0.9);
 }
 .volume-icon.muted {
-    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(180deg); /* Cambia el icono a gris para indicar mute */
+    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(180deg);
 }
 #vlm{
     display: flex;

@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    margin: 0;
+}
+.header {
+    background-color: #7CFC00;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header h1 {
+    font-size: 24px;
+    color: black;
+    left: 70px;
+    position: relative;
+}
+.header nav a {
+    color: #000;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.container {
+    padding: 20px;
+    text-align: center;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+.container h2 {
+    font-size: 2rem;
+    background: linear-gradient(to bottom, #ffff00 45%, #7eff3d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+.form-group {
+    margin: 10px 0;
+}
+.form-group input, .form-group button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.form-group button {
+    background-color: #7CFC00;
+    color: #000;
+    cursor: pointer;
+}
+.table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+    gap: 5px;
+    background-color: rgb(233, 234, 233);
+    color: #000;
+}
+.table th {
+    background-color: #7CFC00;
+    color: #000;
+}
+.footer {
+    background-color: wheat;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    top: 203px;
+}
+.btn-danger{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 14px;
+}

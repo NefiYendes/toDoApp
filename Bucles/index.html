@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Generador de tabla de multiplicar</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de tabla de multiplicar</h1>
+        <div class="container1">
+            <form onsubmit="calcular(event)">
+                <label for="num">Ingresa un número:
+                    <input type="number" id="num" required min="0" step="0.01">
+                </label>
+
+                <label for="num2"> Ingresa desde que número quieres comenzar tu tabla
+                    <input type="number" id="num2" required min="0" step="0.01">
+                </label>
+
+                <label for="num3">Ingresa hasta cuanto quiere que se multiplique:
+                    <input type="number" id="num3" required min="0" step="0.01">
+                </label>
+
+                <button type="submit">Generar tabla</button>
+            </form>
+        </div>
+        <div class="parrafo" id="parrafos">
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>Operación</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="resultados">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+

@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
+        <nav class="menu movible">
             <img class="imagen-titulo" src="/Tinkercad/tinkercad-lockup-white.svg" alt="">
             <ul class="menu-principal">
                 <li><a href="#">Tinker</a></li>
@@ -19,9 +19,14 @@
                 <li><a href="#">Recursos</a></li>
             </ul>
             <ul class="menu-secundario">
-                <li><img class="buscar" src="/Tinkercad/icons8-búsqueda-50 (1).png" alt="Buscar"></li>
-                <li><button class="iniciar-sesion">Iniciar sesión</button></li>
-                <li><button class="registrarse" onclick="submit()">Registrarse</button></li>
+                <li><img class="buscar" src="/Tinkercad/icons8-búsqueda-50 (1).png" alt="Buscar">
+                </li>
+                <li>
+                    <button class="iniciar-sesion">Iniciar sesión</button>
+                </li>
+                <li>
+                    <button class="registrarse" onclick="submit()">Registrarse</button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -44,12 +49,82 @@
         <article class="description">
             <p>Tinkercad es una aplicación web gratuita para realizar diseños 3D,<br>componentes electrónicos y codificación en la que confían más de 75 millones<br>de personas en todo el mundo.</p>
             <p>Aumenta el dominio de las disciplinas STEM al llevar el aprendizaje basado en<br>proyectos al aula.</p>
-        <span class="botones">
-            <button class="boton tinkercad">Empezar a usar Tinkercad</button>
-            <button class="boton unirse">Únete a una clase</button>
-        </span>
-    </article>
-        <section>
+            <span class="botones">
+                <button class="boton tinkercad">Empezar a usar Tinkercad</button>
+                <button class="boton unirse">Únete a una clase</button>
+            </span>
+        </article>
+        <section class="figuras">
+            <article class="imagenes">
+                <img class="primera-imagen" src="./WhatsApp Image 2025-02-28 at 10.55.08 PM.jpeg" alt=""height="100%" width="200px">
+                <h3>Gratis para todos</h3>
+                <p>Sin descargas. Sin cadenas;<br> asociadas. Comience a crear<br> desde el primer clic.</p>
+                <a class="medio centrar" href="#">Empezar a usar Tinkercad</a>
+            </article>
+            <article class="imagenes">
+                <img src="./WhatsApp Image 2025-02-28 at 10.55.38 PM.jpeg" alt="" height="100%" width="290px">
+                <h3>Aprender con la práctica</h3>
+                <p>Los proyectos prácticos generan<br>confianza, persistencia y<br>
+                    capacidad para resolver<br>
+                    problemas.</p>
+                <a class="medio" href="#">Explorar proyectos</a>
+            </article>
+            <article class="imagenes">
+                <img src="./WhatsApp Image 2025-02-28 at 10.56.28 PM.jpeg" alt="" height="100%" width="230px">
+                <h3>Seguro para todas las edades</h3>
+                <p>Sin anuncios y certificado por<br> para garantizar la <br>privacidad y un entorno de<br> aprendizaje seguro.</p>
+                <a class="medio" href="#">Privacidad y seguridad</a>
+            </article>
+        </section>
+        <h4>Más de <strong>75 millones de personas</strong> han<br> confiado en Tinkercad para <strong>dar vida<br> a 600 millones de diseños</strong></h4>
+        <img class="adorno" src="./7ed118b9-03fb-4c14-9ae2-5944b31292e3.jpeg" alt="" width="100%" height="230px">
+        <section class="otro-parrafo">
+            <h5>De solo una idea a todo un diseño en cuestión de minutos</h5>
+            <p>Descubra la emoción de la invención. Combine y experimente. Perfeccione<br> y aprenda. Dé a los estudiantes el impulso necesario para adentrarse en las<br> carreras CTIM con confianza.</p>
+        </section>
+
+        <section class="articulos">
+            <div class="desing-1">
+                <div class="container">
+                    <p>Diseño 3D</p>
+                    <h6 class="azul">Comienza a diseñar en 3D</h6>
+                    <p>Si puedes imaginarlo, puedes construirlo. Desde<br> prototipos hasta piezas imprimibles, el diseño 3D es el<br> primer paso para hacer realidad las grandes ideas.
+                    </p>
+                    <button class="accesorio azul">Explora el diseño 3D 
+                    </button>
+                </div>
+                <div class="container-1">
+                    <video src="./videos/home-3d.mp4" alt="Funcionanmiento 3D"></video>
+                    <button class="play-pause-button"></button>
+                    <img class="otro" src="./PlayIcon.png" alt="play-pause-button">
+                </div>
+            </div>
+            <div class="desing-1">
+                <div class="container">
+                    <p>Circuitos</p>
+                    <h6 class="verde">Deja volar tu imaginación</h6>
+                    <p>Desde iluminar un LED de forma intermitente por<br> primera vez hasta rediseñar el termómetro: le <br> mostraremos los cables, los botones y las placas de <br> prueba de la electrónica.</p>
+                    <button class="accesorio button-green">Explorar circuitos</button>
+                </div>
+                <div class="container-1">
+                    <video class="middle-video" src="./videos/design-600.mp4"></video>
+                    <button class="play-pause-button"></button>
+                    <img class="otro" src="./PlayIcon.png" alt="play-pause-button">
+                </div>
+            </div>
+            <div class="desing-1">
+                <div class="container">
+                    <p>Bloques de código</p>
+                    <h6 class="purple">Crea una base de programación</h6>
+                    <p>Escriba programas para materializar sus diseños. El <br> código basado en bloques facilita la creación de <br> diseños dinámicos, paramétricos y adaptativos.</p>
+                    <button class="accesorio button-purple">Explorar bloques de código</button>
+                </div>
+                <div class="container-1">
+                    <video src="./videos/dragdrop.mp4"></video>
+                    <button class="play-pause-button"></button>
+                    <img class="otro" src="./PlayIcon.png" alt="play-pause-button">
+                </div>
+            </div>
         </section>
     </main>
 </body>
